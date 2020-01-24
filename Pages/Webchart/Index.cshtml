@@ -1,0 +1,308 @@
+@page
+@model RazorPagesMovie.Pages.Webchart.IndexModel
+@using System.Linq;
+
+@{  
+    var XLabelsmer = Newtonsoft.Json.JsonConvert.SerializeObject( Model.lstModelmerchat.Select( x => x.DimensionOne ).ToList() );  
+    var YValuesmer = Newtonsoft.Json.JsonConvert.SerializeObject( Model.lstModelmerchat.Select( x => x.Quantity ).ToList() );  
+    
+     var XLabelsgeo = Newtonsoft.Json.JsonConvert.SerializeObject( Model.lstModelgeopagos.Select( x => x.DimensionOne ).ToList() );  
+    var YValuesgeo = Newtonsoft.Json.JsonConvert.SerializeObject( Model.lstModelgeopagos.Select( x => x.Quantity ).ToList() );  
+    
+     var XLabelslog = Newtonsoft.Json.JsonConvert.SerializeObject( Model.lstModellogope.Select( x => x.Operacion ).ToList() );  
+    var YValueslog = Newtonsoft.Json.JsonConvert.SerializeObject( Model.lstModellogope.Select( x => x.Cant_trx ).ToList() );  
+    
+    
+    ViewData["Title"] = "Bar Chart"; 
+   
+
+} 
+
+<div>
+
+
+
+  <div class="box-body">    
+        <div class="chart-container">  
+            <canvas id="chartmer" style="width:50%; height:500px"></canvas>  
+        </div>  
+  </div>  
+
+   <div class="box-body">    
+        <div class="chart-container">  
+            <canvas id="chartgeo" style="width:50%; height:500px"></canvas>  
+        </div>  
+  </div>  
+
+   <div class="box-body">    
+        <div class="chart-container">  
+            <canvas id="chartlog" style="width:50%; height:500px"></canvas>  
+        </div>  
+  </div>  
+
+
+
+
+
+  <div class="row">
+    <div class="col">
+      Dimensiones
+    </div>
+     <div class="col">
+      Cantidad
+    </div>
+  </div>
+
+ @foreach (var item in Model.lstModellogope) 
+  {
+      <div class="row">   
+          <div class="col">
+              @Html.DisplayFor(modelItem => item.Operacion)
+          </div>
+          <div class="col">
+              @Html.DisplayFor(modelItem => item.Cant_trx)
+          </div>       
+      </div>
+ }  
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>  
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>  
+
+
+
+<script type="text/javascript">  
+
+  
+
+$(function () {  
+        var chartName = "chartmer";  
+        var ctx = document.getElementById(chartName).getContext('2d');  
+        var data = {  
+                labels: @Html.Raw(XLabelsmer),  
+                datasets: [{  
+                    label: "Transacciones de Merchant",  
+                    backgroundColor: [  
+                        'rgba(255, 99, 132, 0.2)',  
+                        'rgba(54, 162, 235, 0.2)',  
+                        'rgba(255, 206, 86, 0.2)',  
+                        'rgba(75, 192, 192, 0.2)',  
+                        'rgba(153, 102, 255, 0.2)',  
+                        'rgba(255, 159, 64, 0.2)',  
+                        'rgba(255, 0, 0)',  
+                        'rgba(0, 255, 0)',  
+                        'rgba(0, 0, 255)',  
+                        'rgba(192, 192, 192)',  
+                        'rgba(255, 255, 0)',  
+                        'rgba(255, 0, 255)'  
+                    ],  
+                    borderColor: [  
+                        'rgba(255,99,132,1)',  
+                        'rgba(54, 162, 235, 1)',  
+                        'rgba(255, 206, 86, 1)',  
+                        'rgba(75, 192, 192, 1)',  
+                        'rgba(153, 102, 255, 1)',  
+                        'rgba(255, 159, 64, 1)',  
+                        'rgba(255, 0, 0)',  
+                        'rgba(0, 255, 0)',  
+                        'rgba(0, 0, 255)',  
+                        'rgba(192, 192, 192)',  
+                        'rgba(255, 255, 0)',  
+                        'rgba(255, 0, 255)'  
+                    ],  
+                    borderWidth: 1,  
+                    data: @Html.Raw(YValuesmer)  
+                            }]  
+            };  
+  
+var options = {  
+                maintainAspectRatio: false,  
+                scales: {  
+                    yAxes: [{  
+                        ticks: {  
+                            min: 0,  
+                            beginAtZero: true  
+                        },  
+                        gridLines: {  
+                            display: true,  
+                            color: "rgba(255,99,164,0.2)"  
+                        }  
+                            }],  
+                    xAxes: [{  
+                        ticks: {  
+                            min: 0,  
+                            beginAtZero: true  
+                        },  
+                        gridLines: {  
+                            display: false  
+                        }  
+                    }]  
+                }  
+            };  
+  
+       var myChart = new  Chart(ctx, {  
+                options: options,  
+                data: data,  
+                type:'bar'  
+  
+            });  
+      
+
+
+
+
+
+        var chartName = "chartgeo";  
+        var ctx = document.getElementById(chartName).getContext('2d');  
+        var data = {  
+                labels: @Html.Raw(XLabelsgeo),  
+                datasets: [{  
+                    label: "Transacciones de Geopagos",  
+                    backgroundColor: [  
+                        'rgba(255, 99, 132, 0.2)',  
+                        'rgba(54, 162, 235, 0.2)',  
+                        'rgba(255, 206, 86, 0.2)',  
+                        'rgba(75, 192, 192, 0.2)',  
+                        'rgba(153, 102, 255, 0.2)',  
+                        'rgba(255, 159, 64, 0.2)',  
+                        'rgba(255, 0, 0)',  
+                        'rgba(0, 255, 0)',  
+                        'rgba(0, 0, 255)',  
+                        'rgba(192, 192, 192)',  
+                        'rgba(255, 255, 0)',  
+                        'rgba(255, 0, 255)'  
+                    ],  
+                    borderColor: [  
+                        'rgba(255,99,132,1)',  
+                        'rgba(54, 162, 235, 1)',  
+                        'rgba(255, 206, 86, 1)',  
+                        'rgba(75, 192, 192, 1)',  
+                        'rgba(153, 102, 255, 1)',  
+                        'rgba(255, 159, 64, 1)',  
+                        'rgba(255, 0, 0)',  
+                        'rgba(0, 255, 0)',  
+                        'rgba(0, 0, 255)',  
+                        'rgba(192, 192, 192)',  
+                        'rgba(255, 255, 0)',  
+                        'rgba(255, 0, 255)'  
+                    ],  
+                    borderWidth: 1,  
+                    data: @Html.Raw(YValuesgeo)  
+    }]  
+            };  
+  
+var options = {  
+                maintainAspectRatio: false,  
+                scales: {  
+                    yAxes: [{  
+                        ticks: {  
+                            min: 0,  
+                            beginAtZero: true  
+                        },  
+                        gridLines: {  
+                            display: true,  
+                            color: "rgba(255,99,164,0.2)"  
+                        }  
+                            }],  
+                    xAxes: [{  
+                        ticks: {  
+                            min: 0,  
+                            beginAtZero: true  
+                        },  
+                        gridLines: {  
+                            display: false  
+                        }  
+                    }]  
+                }  
+            };  
+  
+       var myChart = new  Chart(ctx, {  
+                options: options,  
+                data: data,  
+                type:'bar'  
+  
+            });  
+
+
+
+
+
+              var chartName = "chartlog";  
+        var ctx = document.getElementById(chartName).getContext('2d');  
+        var data = {  
+                labels: @Html.Raw(XLabelslog),  
+                datasets: [{  
+                    label: "Log Operaciones Flow",  
+                    backgroundColor: [  
+                        'rgba(255, 99, 132, 0.2)',  
+                        'rgba(54, 162, 235, 0.2)',  
+                        'rgba(255, 206, 86, 0.2)',  
+                        'rgba(75, 192, 192, 0.2)',  
+                        'rgba(153, 102, 255, 0.2)',  
+                        'rgba(255, 159, 64, 0.2)',  
+                        'rgba(255, 0, 0)',  
+                        'rgba(0, 255, 0)',  
+                        'rgba(0, 0, 255)',  
+                        'rgba(192, 192, 192)',  
+                        'rgba(255, 255, 0)',  
+                        'rgba(255, 0, 255)'  
+                    ],  
+                    borderColor: [  
+                        'rgba(255,99,132,1)',  
+                        'rgba(54, 162, 235, 1)',  
+                        'rgba(255, 206, 86, 1)',  
+                        'rgba(75, 192, 192, 1)',  
+                        'rgba(153, 102, 255, 1)',  
+                        'rgba(255, 159, 64, 1)',  
+                        'rgba(255, 0, 0)',  
+                        'rgba(0, 255, 0)',  
+                        'rgba(0, 0, 255)',  
+                        'rgba(192, 192, 192)',  
+                        'rgba(255, 255, 0)',  
+                        'rgba(255, 0, 255)'  
+                    ],  
+                    borderWidth: 1,  
+                    data: @Html.Raw(YValueslog)  
+    }]  
+            };  
+  
+var options = {  
+                maintainAspectRatio: false,  
+                scales: {  
+                    yAxes: [{  
+                        ticks: {  
+                            min: 0,  
+                            beginAtZero: true  
+                        },  
+                        gridLines: {  
+                            display: true,  
+                            color: "rgba(255,99,164,0.2)"  
+                        }  
+                            }],  
+                    xAxes: [{  
+                        ticks: {  
+                            min: 0,  
+                            beginAtZero: true  
+                        },  
+                        gridLines: {  
+                            display: false  
+                        }  
+                    }]  
+                }  
+            };  
+  
+       var myChart = new  Chart(ctx, {  
+                options: options,  
+                data: data,  
+                type:'bar'  
+  
+            }); 
+
+
+
+       
+});
+</script>  
