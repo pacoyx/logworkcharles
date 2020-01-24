@@ -43,10 +43,19 @@
 
 
 
-
+<h2>Tabla de Log Flow</h2>
   <div class="row">
     <div class="col">
-      Dimensiones
+      Fecha
+    </div>
+     <div class="col">
+      Cliente
+    </div>
+    <div class="col">
+      Tipo
+    </div>
+    <div class="col">
+      Operacion
     </div>
      <div class="col">
       Cantidad
@@ -57,9 +66,18 @@
   {
       <div class="row">   
           <div class="col">
-              @Html.DisplayFor(modelItem => item.Operacion)
+              @Html.DisplayFor(modelItem => item.Fecha)
           </div>
           <div class="col">
+              @Html.DisplayFor(modelItem => item.Cliente)
+          </div>     
+           <div class="col">
+              @Html.DisplayFor(modelItem => item.Tipo)
+          </div>     
+           <div class="col">
+              @Html.DisplayFor(modelItem => item.Operacion)
+          </div>     
+           <div class="col">
               @Html.DisplayFor(modelItem => item.Cant_trx)
           </div>       
       </div>

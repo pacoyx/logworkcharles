@@ -8859,11 +8859,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\_Karlos\\pruebas\\RazorPagesMovie\\RazorPagesMovie.csproj",
+      "projectUniqueName": "E:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\RazorPagesMovie.csproj",
       "projectName": "RazorPagesMovie",
-      "projectPath": "E:\\_Karlos\\pruebas\\RazorPagesMovie\\RazorPagesMovie.csproj",
+      "projectPath": "E:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\RazorPagesMovie.csproj",
       "packagesPath": "C:\\Users\\ITDATA\\.nuget\\packages\\",
-      "outputPath": "E:\\_Karlos\\pruebas\\RazorPagesMovie\\obj\\",
+      "outputPath": "E:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -1,5 +1,5 @@
 {
-  "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\RazorPagesMovie.csproj",
+  "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\RazorPagesMovie.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20501,103 +20501,103 @@
   "RootNamespace": "RazorPagesMovie",
   "Documents": [
     {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Movies\\Edit.cshtml",
-      "TargetPath": "Pages\\Movies\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Movies\\Index.cshtml",
-      "TargetPath": "Pages\\Movies\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Articulo\\Details.cshtml",
-      "TargetPath": "Pages\\Articulo\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Webchart\\Shared\\_Footer.cshtml",
-      "TargetPath": "Pages\\Webchart\\Shared\\_Footer.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Index.cshtml",
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Articulo\\Create.cshtml",
-      "TargetPath": "Pages\\Articulo\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Webchart\\Shared\\_Header.cshtml",
-      "TargetPath": "Pages\\Webchart\\Shared\\_Header.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Articulo\\Delete.cshtml",
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Articulo\\Delete.cshtml",
       "TargetPath": "Pages\\Articulo\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Error.cshtml",
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Webchart\\Shared\\_Header.cshtml",
+      "TargetPath": "Pages\\Webchart\\Shared\\_Header.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Webchart\\Shared\\_Footer.cshtml",
+      "TargetPath": "Pages\\Webchart\\Shared\\_Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Articulo\\Create.cshtml",
+      "TargetPath": "Pages\\Articulo\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Articulo\\Edit.cshtml",
-      "TargetPath": "Pages\\Articulo\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Webchart\\Index.cshtml",
-      "TargetPath": "Pages\\Webchart\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Articulo\\Index.cshtml",
-      "TargetPath": "Pages\\Articulo\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Movies\\Create.cshtml",
-      "TargetPath": "Pages\\Movies\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Movies\\Details.cshtml",
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Movies\\Details.cshtml",
       "TargetPath": "Pages\\Movies\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\Pages\\Movies\\Delete.cshtml",
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Movies\\Create.cshtml",
+      "TargetPath": "Pages\\Movies\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Movies\\Index.cshtml",
+      "TargetPath": "Pages\\Movies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Webchart\\Index.cshtml",
+      "TargetPath": "Pages\\Webchart\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Movies\\Edit.cshtml",
+      "TargetPath": "Pages\\Movies\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Articulo\\Details.cshtml",
+      "TargetPath": "Pages\\Articulo\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Movies\\Delete.cshtml",
       "TargetPath": "Pages\\Movies\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Articulo\\Index.cshtml",
+      "TargetPath": "Pages\\Articulo\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\_Karlos\\pruebas\\RazorPagesMovie\\logworkcharles\\Pages\\Articulo\\Edit.cshtml",
+      "TargetPath": "Pages\\Articulo\\Edit.cshtml",
       "FileKind": "mvc"
     }
   ],
